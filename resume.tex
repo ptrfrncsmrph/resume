@@ -1,0 +1,92 @@
+\documentclass{article}
+
+\usepackage{fontspec}
+\usepackage{titlesec}
+\usepackage{titling}
+
+\titleformat{\section}
+  {\normalfont\sffamily\LARGE}
+  {}{0em}{}
+\titleformat{\subsection}
+  {\sffamily\large\uppercase}
+  {}{0em}{}
+\titleformat{\subsubsection}
+  {\normalfont\sffamily\large}
+  {}{0em}{}
+\titleformat{\subsubsubsection}
+  {\normalfont\sffamily}
+  {}{0em}{}
+
+\defaultfontfeatures{Mapping=tex-text,Scale=MatchLowercase}
+\setmainfont{Lyon Text}
+\setsansfont{Calibre Medium}
+\pagenumbering{gobble}
+
+\renewcommand{\maketitle}{
+  \begin{minipage}[]{.5\textwidth}
+    \par{\Huge\sffamily{\theauthor}\par}
+  \end{minipage}
+  \begin{minipage}[t]{.5\textwidth}
+    \emph{Frontend Developer}
+
+    https://www.github.com/ptrfrncsmrph/
+    
+    peter.francis.murphy@gmail.com
+  \end{minipage}
+}
+
+\author{Peter Murphy}
+
+\begin{document}
+
+\maketitle
+
+\subsection{Technical Skills}
+
+\paragraph{Languages}
+
+I have experience in JavaScript, Haskell, HTML, and CSS. I am mostly
+familiar with frontend technologies, though I have set up basic backends
+using Node with Express (in JavaScript), Scotty (in Haskell), and am
+currently learning SQL. Libraries I've used in JS include React, Redux,
+and D3.
+
+\paragraph{Workflow}
+
+I alternate between VS Code and Vim with tmux. I'm adept at Git and I
+also have experience with basic Bash operations and writing Makefiles
+for automating workflow. I use Tape and Jest for testing in JavaScript;
+in Haskell I use Hspec and have some experience using QuickCheck for
+property testing. I very much enjoy test-driven development.
+
+\subsection{Experience}
+
+\subsubsection{Cape Cod Functional Programming
+Meetup}
+
+\paragraph{Organizer}
+
+I organize a local meetup group centered around learning functional
+programming, mostly in JavaScript as that's our \emph{lingua franca}. I
+also maintain a blog for the group, made with Hakyll (a Haskell-based
+static site generator) and Markdown, customized to use syntax-highlighted
+codeblocks, MathJax, and responsive CSS. The site is hosted with GitLab
+pages using the built-in CI: http://ccfp.gitlab.io/blog/.
+
+\subsubsection{SunWind, LLC}
+
+\paragraph{PV System Designer / Energy
+Consultant}
+
+I helped develop a single page web application (written in React) for
+internal use to help with putting together project proposals. The app is
+hosted here: http://sunwindcalc.gitlab.io/.
+
+\subsection{Education}
+
+\subsubsection{Hobart College}
+
+Graduated \emph{cum laude} with a B.A. in Philosophy, minor in
+Mathematics.
+
+\end{document}
